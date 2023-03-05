@@ -1,3 +1,62 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0 , 0, 0.4)), url(../images/joy-division-closer-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+   
+
+
+}
 body {
-    color: red;
+    background-color: black;
+}
+footer {
+    color: white;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 100px;
+    padding-top: 200px;
+    line-height: 1;
+    
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+   
+}
+.main-button {
+    border: 1px solid black;
+    padding: 30px 45px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.title-paragraph {
+    font-size: 45px;
+    padding-bottom: 75px;
+}
+@media (max-width: 800px) {
+   h1 {
+    font-size: 45px;
+    padding-top: 100px;
+   }
+   .title-paragraph {
+    font-size: 30px;
+   }
+   .main-button {
+    font-size: 16px;
+    padding: 25px 35px;
+   }
+   header {
+    height: 550px;
+    }
+   
 }
