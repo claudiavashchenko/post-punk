@@ -11,6 +11,9 @@ header {
 
 
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: black;
 }
@@ -111,6 +114,7 @@ h3 {
     text-align: center;
     display: block;
     margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .img-responsive {
@@ -131,11 +135,42 @@ h2 {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    color: white;
+    text-decoration: none;
 }
 .title-paragraph {
     font-size: 45px;
     padding-bottom: 75px;
 }
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+  }
+  h4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+  }
 @media (max-width: 800px) {
    h1 {
     font-size: 45px;
@@ -191,6 +226,7 @@ h2 {
 }
 .bands {
     font-size: 30px;
+    text-align: center;
 }
 .secondary {
     margin: 0 auto;
@@ -200,7 +236,8 @@ h2 {
     grid-template-columns: 1fr !important;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 100px;
 }
 .card {
@@ -208,9 +245,18 @@ h2 {
     padding: 40px;
     line-height: 1.5;
     width: 350px;
+    margin: 0 auto;
    
 }
 .img-responsive {
     width: 350px;
 }
+.container-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .container-2 {
+    grid-template-columns: 1fr;
+  }
+
 }
