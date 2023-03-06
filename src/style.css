@@ -13,9 +13,13 @@ header {
 }
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body {
     background-color: black;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 footer {
     color: white;
@@ -116,6 +120,9 @@ h3 {
     margin-top: 50px;
     font-family: 'Roboto', sans-serif;
 }
+#more {
+    text-align: center;
+}
 
 .img-responsive {
     width: 400px;
@@ -173,7 +180,7 @@ h2 {
   }
 @media (max-width: 800px) {
    h1 {
-    font-size: 45px;
+    font-size: 35px;
     padding-top: 100px;
    }
    .title-paragraph {
@@ -193,11 +200,14 @@ h2 {
       padding-right: 20px;
       max-width: 100%;
     }
+    .container {
+        width: fit-content;
+    }
    
    .grid {
     display: grid;
     grid-template-columns: 1fr;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
     line-height: 1.5;
     padding-top: 30px;
@@ -212,11 +222,12 @@ h2 {
 }
 .grid-2-columns {
     font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    grid-template-columns: 1fr;
+    padding-right: 30px;
     padding-bottom: 20px;
-    width: 400px;
-    margin: 20px auto;
+    width: 300px;
+    margin-right: 20px;
     
 }
 .main-image {
@@ -229,27 +240,28 @@ h2 {
     text-align: center;
 }
 .secondary {
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 .grid-3-even-column {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card {
     background-color: gray;
     padding: 40px;
     line-height: 1.5;
-    width: 350px;
-    margin: 0 auto;
+    
+    margin-right: 20px;
+    width: 280px;
+    
+    
    
 }
 .img-responsive {
-    width: 350px;
+    width: 270px;
 }
 .container-1 {
     grid-template-columns: 1fr;
@@ -258,5 +270,12 @@ h2 {
   .container-2 {
     grid-template-columns: 1fr;
   }
-
+ html {
+    max-width: 100%;
+    overflow-x: hidden;
+ }
+ .main-paragraph {
+    padding: 20px;
+    margin-right: 20px;
+ }
 }
