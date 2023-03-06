@@ -25,14 +25,19 @@ footer {
 }
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    padding-top: 120px;
+   
+    padding-top: 100px;
+    
     padding-left: 150px;
     padding-right: 150px;
     grid-gap: 70px
 }
 footer a {
     color: white;
+}
+main {
+    color: white;
+    font-size: 19px;
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -56,11 +61,28 @@ h3 {
      font-size: 20px;
 }
 .footer-paragraph {
-    font-size: 20px;
+    font-size: 19px;
 }
 .container {
     
    
+}
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 80px;
+
+}
+.grid-3-column {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.main-image {
+    width: 800px;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
 }
 .main-button {
     border: 1px solid black;
@@ -87,16 +109,22 @@ h3 {
    }
    header {
     height: 550px;
+    background-size: cover;
+    max-width: 100%;
     }
     footer {
-
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 100%;
     }
+   
    .grid {
     display: grid;
     grid-template-columns: 1fr;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 1.5;
+    padding-top: 30px;
    }
    .footer-paragraph {
     font-size: 16px;
@@ -105,5 +133,19 @@ h3 {
     text-decoration: none;
     list-style-type: none;
     font-size: 16px;
+}
+.grid-2-columns {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    margin: 20px auto;
+    
+}
+.main-image {
+    width: 400px;
+    margin-top: 0;
+    padding-top: 20px;
 }
 }
